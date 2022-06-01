@@ -12,6 +12,7 @@
       $scope.checkLunchItems = function () {
           var lunchItemsArray = $scope.lunchItems.split(',');
           var validateLunchItemSpaces = $scope.lunchItems.split(' ');
+          validateLunchItemSpaces = validateLunchItemSpaces.split(',');
           var counter = 0 ;
           if($scope.lunchItems.length == 0 || validateLunchItemSpaces.length ==0){
             $scope.lunchStatus = "Please enter data first"
