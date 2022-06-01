@@ -21,7 +21,7 @@
           if(counter > 3){
             $scope.lunchStatus = "Too much!";
           }else if (counter == 0 && lunchItemsArray.length == 0){
-            $scope.lunchStatus = "Enjoy!";
+            $scope.lunchStatus = "Please enter data first!";
           }else{
             $scope.lunchStatus = "Enjoy!";
           }
